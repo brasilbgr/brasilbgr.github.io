@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="font-size: 350%">👧🏽Using Emoji WOW</h1>
+
+    <p>👧🏻 <a href="https://www.kirupa.com/html5/emoji.htm">How to use emoji</a></p>
+    <p>😍 <a href="https://emojipedia.org">emoji example</a></p>
+    <h1>🍔 Emoji in normal way 🍨</h1>
+
+    <h1>Emoji Using code 😀 &#x1F600; </h1>
+
+    <p>For the hamburger emoji, the codepoint is U+1F354. To specify this emoji in HTML using the codepoint, we have to
+        modify the value a bit. Add the <strong>&#x</strong> characters, remove the <strong>U+1</strong> from the
+        beginning of the codepoint, and just
+        add the remaining digits from the codepoint as part of any text element</p>
+
+    <p>&#x1F354;</p>
+
+
+    <h2 id="emoji"> using emoji with javascript</h2>
+
+    <hr>
+
+    <a href="https://afeld.github.io/emoji-css/">Emoji using css </a>
+    <h3>GIF Picture</h3>
+    <img src="myPicture/lehuga.gif" alt="">
+
+    <script>
+        var emoji = document.querySelector("#emoji");
+        emoji.innerText = String.fromCodePoint(0x1F354) + "Hasil dari Javasricpt";
+    </script>
+
+</body>
+
+</html>

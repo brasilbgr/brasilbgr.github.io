@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+
+<body>
+
+
+    <h1>Learn about FORM</h1>
+
+    <hr>
+
+    <a href="https://www.w3schools.com/html/html_forms.asp">Referensi</a>
+
+    <form method="POST" action="/action_page.php">
+        <label for="firstname"> First Name :</label>
+        <input type="text" name="firstname" id="firstname">
+        <br> last Name :
+        <input type="text" name="lastname">
+        <br>
+        <!-- mulai dari text dulu, required, type email -->
+        email :
+        <input type="email" required name="email">
+        <br> Passwrod :
+        <input type="password" min="5" name="password">
+        <br> Birthday :
+        <input type="date" name="birthday">
+        <br>
+        <!-- use name untuk select salah satu -->
+        <!-- use value to send value  -->
+        Gender :
+        <br>
+        <!-- understand about attribute for and id -->
+        <label for="male"> ♂️ male</label>
+        <input type="radio" name="gender" value="male" id="male">
+        <br>
+        <input type="radio" name="gender" value="female"> female
+        <br>
+        <input type="radio" name="gender" value="other"> Other
+        <br> Binatang :
+        <br>
+        <input type="checkbox" name="cat"> Cat
+        <br>
+        <input type="checkbox" name="dog"> Dog
+        <br>
+        <input type="checkbox" name="bird"> Bird
+        <br>
+        <input type="checkbox" name="fish"> Fish
+        <br>
+        <!-- untuk bisa multipe gunakan attribute multipe sambil lihat google-->
+        Mobil :
+        <select name="car">
+            <!-- use optgroup for the last -->
+            <optgroup label="Japan">
+                <option value="Honda">Honda</option>
+                <option value="Toyota">Toyota</option>
+            </optgroup>
+            <optgroup label="Europe">
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+            </optgroup>
+        </select>
+        <br>
+        <fieldset style="display: inline-block;">
+            <legend>Hobi</legend>
+            <input list="datahobi" name="hobi">
+            <datalist id="datahobi">
+                <option value="gaming"></option>
+                <option value="coding"></option>
+                <option value="swimming"></option>
+            </datalist>
+        </fieldset>
+        <br> Note :
+        <br>
+        <textarea name="note" cols="30" rows="10"></textarea>
+        <br>
+        <input type="range" name="points" max="10" min="0" value="0">
+        <br>
+        <input type="submit" value="Register">
+        <input type="reset">
+
+    </form>
+
+
+
+    <form action="" method="get" id="myform2">
+        <input type="range" name="points" max="10" min="0" value="0">
+    </form>
+
+    <input type="submit" value="Register" form="myform2">
+
+    <p>id is something element tou want to shoot, form / for is the shooter or the tag action element</p>
+
+    <p>dont forget about query string</p>
+
+    <hr>
+
+    <form action="https://www.google.com/search" method="GET">
+        <label>Cari:</label>
+        <input type="text" name="q">
+        <input type="submit" value="Cari di Google">
+    </form>
+
+    <br>
+
+    <form action="https://www.google.com/maps" method="GET">
+        <label>Cari:</label>
+        <input type="text" name="q">
+        <input type="submit" value="Cari di Google Maps">
+    </form>
+
+</body>
+
+</html>
